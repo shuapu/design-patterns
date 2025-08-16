@@ -1,8 +1,8 @@
-package Creational;
+package Creational.Singleton;
 
 public class SingletonBillPugh {
     /*
-      Pros : Best approach..Lazy init and no synchronization overhead.
+      Pros : Best approach.Lazy init and no synchronization overhead.
       Cons : No
      */
     private SingletonBillPugh() {

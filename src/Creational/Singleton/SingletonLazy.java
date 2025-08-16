@@ -1,6 +1,9 @@
-package Creational;
+package Creational.Singleton;
 
-public class SingletonLazy {
+import java.io.Serial;
+import java.io.Serializable;
+
+public class SingletonLazy  implements Cloneable,Serializable {
 
     private static SingletonLazy instance = null;
 
@@ -51,5 +54,20 @@ public class SingletonLazy {
         return instance;
     }
 
+
+    @Override
+    public SingletonLazy clone() throws CloneNotSupportedException {
+        throw new CloneNotSupportedException("Clone not supported");
+    }
+
+    /**
+     * This is special method called while serialization and deserialization.
+     * This protects singleton to be broken while serialization and deserialization.
+     * @return SingletonLazy
+     */
+    @Serial
+    protected Object readResolve(){
+        return instance;
+    }
 
 }
