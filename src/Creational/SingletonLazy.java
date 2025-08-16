@@ -8,7 +8,9 @@ public class SingletonLazy {
      * Private Constructor to avoid creation of object outside class.
      */
     private SingletonLazy() {
-
+        if (instance != null) {
+            throw new RuntimeException("Class object creation not supported");
+        }
     }
 
     /**
