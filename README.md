@@ -1,2 +1,4 @@
-# design-patterns
-This java repository is a collection of design patterns with example
+## Design-Patterns - Collection of Design Patterns with examples
+### Creational Design Patterns
+### Structural Design Patterns
+### Behavioral Design Patterns
