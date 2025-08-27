@@ -3,8 +3,8 @@ package Behavioural.Strategy;
 public class MainClass {
     public static void main(String[] args) {
         /*
-        Use case : When a class have n  number of children and out of n , m has simpler behaviour .
-        Then we should use strategy patterns to avoid code duplicate in all m children.
+        Use case : When a class have n  number of children and out of n , m has same behaviour .
+        Then we should use strategy patterns to avoid code duplicate in all n children.
          */
 
         DriveMode economyDriveMode = new EconomyDriveMode();
